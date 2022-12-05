@@ -1,0 +1,12 @@
+.portfolio {
+    --items: 3;
+}
+
+.portfolio__card {
+    background-color: var(--main-background-color);
+    transition: box-shadow var(--anmtn-duration-cubic);
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

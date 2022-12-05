@@ -1,0 +1,28 @@
+.client__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-main-color);
+    background-color: var(--main-background-color);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    transition: color var(--anmtn-duration-cubic), border var(--anmtn-duration-cubic);
+    
+    &:hover, &:focus {
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.client__icon {
+    fill: currentColor
+}

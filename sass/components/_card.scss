@@ -1,0 +1,27 @@
+.card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__wrapper {
+    padding: 20px 24px;
+
+    border: 1px solid var(--portfolio-card-border-color);
+    border-top: none;
+}
+
+.card__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-title-color);
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}

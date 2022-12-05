@@ -1,0 +1,38 @@
+.checkbox__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 30px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+.checkbox__icon--uncheck {
+    opacity: 1;
+    transition: opacity var(--anmtn-duration-cubic);
+
+    .checkbox__input:checked+.checkbox__icon & {
+        opacity: 0;
+    }
+}
+
+.checkbox__icon--check {
+    opacity: 0;
+    transition: opacity var(--anmtn-duration-cubic);
+
+    .checkbox__input:checked+.checkbox__icon & {
+        opacity: 1;
+    }
+}
+
+.checkbox__input:focus-visible+.checkbox__icon {
+    outline: auto;
+    outline-offset: 1px;
+    outline-color: #2360C5;
+}
+
+.checkbox__terms-link {
+    text-underline-offset: 2px;
+    color: var(--accent-color);
+}
