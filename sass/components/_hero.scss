@@ -8,6 +8,12 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+
+    @media screen and (max-width: 1119px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        
+    }
 }
 
 .hero-section__title {
@@ -23,6 +29,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-white-color);
+
+    @media screen and (max-width: 1119px) {
+        width: 360px;
+        font-size: 26px;
+        line-height: calc(42 / 26);
+    }
+   
 }
 
 .hero-section__btn {

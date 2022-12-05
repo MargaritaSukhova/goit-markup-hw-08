@@ -1,15 +1,23 @@
 .client__list {
+    --items: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (min-width:768px) {
+        --items: 3;   
+    }
+    @media screen and (min-width:1200px) {
+        --items: 6;
+    }
 }
 
 .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     color: var(--icon-main-color);
     background-color: var(--main-background-color);
@@ -21,6 +29,15 @@
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
     }
+    
+    @media screen and (min-width:768px) {
+            width: 226px;
+        }
+    
+    @media screen and (min-width:1200px) {
+                width: 170px;
+        }
+
 }
 
 .client__icon {
