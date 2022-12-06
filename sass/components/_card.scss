@@ -8,6 +8,10 @@
 
     border: 1px solid var(--portfolio-card-border-color);
     border-top: none;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        &--first {padding-bottom: 56px;}
+    }
 }
 
 .card__title {
