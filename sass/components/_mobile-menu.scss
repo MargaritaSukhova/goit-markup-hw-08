@@ -74,6 +74,10 @@
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 26px;
+    }
 }
 
 .mobile-menu__mail {
@@ -91,6 +95,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media screen and (max-width: 479px) {
+        flex-wrap: wrap;  
+    }
 }
 
 .mobile-menu__socials-item {

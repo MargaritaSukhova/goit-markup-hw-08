@@ -5,6 +5,10 @@
         align-items: center;
         justify-content: center;
     }
+    @media screen and (max-width: 479px) {
+        padding: 0 15px;
+        width: 100vw;
+    }
 }
 
 .subscription-form__label {
@@ -37,6 +41,10 @@
         margin-left: auto;
         margin-bottom: 20px;
         width: 450px;
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
     }
 }
 

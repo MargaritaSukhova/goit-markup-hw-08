@@ -4,8 +4,8 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    width: 450px;
-    height: 609px;
+    width: 100vw;
+    max-height: 609px;
     padding: 40px;
 
     background-color: var(--main-background-color);
@@ -13,6 +13,11 @@
     border-radius: 4px;
 
     transition: transform var(--anmtn-duration-cubic), opacity var(--anmtn-duration-cubic);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 528px;
