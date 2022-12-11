@@ -7,3 +7,21 @@
 .card-set__item {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
+
+.card-set__item > .link {
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &:hover, &:focus {
+        transform: translateY(0);
+    }
+}
+
+ .portfolio__card > .link:hover .overlay, 
+ .portfolio__card>.link:focus .overlay {
+    transform: translateY(0);
+ }
+ 

@@ -10,21 +10,25 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 
     background-color: var(--overlay-accent-background-color);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--anmtn-duration-cubic);
 
-    .portfolio__card:hover & {
-        transform: translateY(0);
+    @media screen and (min-width: 768px) {
+        align-items: center;
     }
 }
+
+
 
 .overlay__text {
     font-size: 18px;
     line-height: calc(28/18);
     letter-spacing: 0.03em;
     color: var(--main-white-color);
+    overflow-y: scroll;
+
 }

@@ -18,6 +18,10 @@
     }
 }
 
+.checkbox__icon {
+    min-width: 16px;
+}
+
 .checkbox__icon--uncheck {
     opacity: 1;
     transition: opacity var(--anmtn-duration-cubic);

@@ -13,12 +13,16 @@
     }
 }
 
+.client__item {
+   height: 92px; 
+}
+
 .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
     
-    height: 92px;
+    height: 100%;
     color: var(--icon-main-color);
     background-color: var(--main-background-color);
     border-radius: 4px;
